@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Adu Editan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <img src="loading.png" alt="Loading..." class="loading-img">
+  </div>
+
+<!-- Form Section -->
+<div id="formSection" class="form-section" style="display: none;">
+    <div class="container">
+      <h1>Pendaftaran Adu Editan</h1>
+      <form id="registrationForm" action="https://formspree.io/f/xdkkprln" method="POST">
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Masukkan email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Nomor Telepon</label>
+          <input type="text" id="phone" name="phone" required placeholder="Masukkan nomor telepon">
+        </div>
+        <div class="form-group">
+          <label for="event">Nama Event</label>
+          <select id="event" name="event" required>
+            <option value="">Pilih Event</option>
+            <option value="Adu Editan">Adu Editan</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Daftar Sekarang</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
